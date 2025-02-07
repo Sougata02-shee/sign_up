@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="post">
+        <fieldset>
+            <legend>Sign Form</legend>
+
+        <label for="username">USERNAME : </label>
+        <input type="text" name="USERNAME" id="username"><br><br>
+
+        <label for="password">PASSWORD : </label>
+        <input type="password" name="PASSWORD" id="password"><br><br>
+
+        <label for="email">EMAIL : </label>
+        <input type="email" name="EMAIL" id="email"><br><br>
+
+        <label for="">CITY : </label>
+        <select name="" id="city">
+            <option value="">select</option>
+            <option value="Kolkata">Kolkata</option>
+            <option value="Bangaluru">Bangaluru</option>
+            <option value="Chennai">Chennai</option>
+            <option value="Pune">Pune</option>
+        </select><br><br>
+
+        <label for="">LANGAUGES : </label>
+        <label for="ENG">English</label>
+        <input type="checkbox" id="ENG">
+        <label for="HIN">Hindi</label>
+        <input type="checkbox" id="HIN">
+        <label for="BENG">Bengali</label>
+        <input type="checkbox" id="BENG"><br><br>
+
+        <label for="GENDER">GENDER : </label>
+        <label for="male">MALE</label>
+        <input type="radio" id="male" name="GENDER">
+        <label for="female">FEMALE</label>
+        <input type="radio" id="female" name="GENDER">
+        <label for="other">OTHER</label>
+        <input type="radio" id="other" name="GENDER"><br><br>
+
+        <label for="">EDUCATION : </label>
+        <table border="1px" cellpadding="1px" cellspacing="1px">
+            <tr>
+                <td><label for="">10th(%)</label></td>
+                <td><label for="">12th(%)</label></td>
+                <td><label for="">Dgree(%)</label></td>
+            </tr>
+            <tr>
+                <td><input type="number"></td>
+                <td><input type="number"></td>
+                <td><input type="number"></td>
+            </tr>
+        </table><br><br>
+
+        <label for="">PHOTO : </label>
+        <input type="file"><br><br>
+
+        <button>Submit</button>
+        <button>Cancel</button>
+
+        </fieldset>
+    </form>
+    <script>
+        let btn=document.querySelector("button")
+        btn.addEventListener("click",(e)=>{
+            e.preventDefault()
+            // let user=document.querySelector("#username")
+            // let pwd=document.querySelector('#password')
+            // let mail=document.querySelector("#email")
+            let cit=document.querySelector("#city")
+            // console.log(user.value);
+            // console.log(pwd.value);
+            // consol.log(mail.value);
+            console.log(cit.value);
+            
+            
+        })
+    </script>
+</body>
+</html>
